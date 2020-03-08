@@ -29,7 +29,7 @@ const TopAppBar = (props) => {
 		<React.Fragment>
 			<CssBaseline />
 			<ElevationScroll {...props}>
-				<AppBar>
+				<AppBar style = {{background: "black"}}>
 					<Toolbar>
 						<AppDrawer userRole={props.userRole} setPage={props.setPage} />
 						<Grid container alignItems="center" justify="space-between">
