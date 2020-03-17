@@ -15,6 +15,6 @@ test("ProductList should render passed props as content body and respond to call
   );
 
   expect(getByTestId("product-list-empty").textContent).toBe(
-    "There is nothing hereAdd an item to start"
+    "There nothing hereAdd an item to start"
   );
 });
