@@ -37,7 +37,7 @@ const TopAppBar = (props) => {
 								<Typography variant="h6">
 									Thrift Shift
 								</Typography>
-								<Typography data-testid="role" variant="h6">
+								<Typography data-testid="role" variant="h6" style = {{color:'white'}}>
 									{props.userRole}
 								</Typography>
 							</Grid>
