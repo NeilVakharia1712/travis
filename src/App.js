@@ -71,7 +71,9 @@ const App = () => {
     <Container disableGutters>
       <div style={{ height: '10px' }} />
       <ChooseRole user={user} />
+      <div data-cy="TopAppBar">
       <TopAppBar user={user} userRole={userRole} setPage={setPage} />
+      </div>
       {
         page === 'product' ?
           <div>
