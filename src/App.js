@@ -26,6 +26,7 @@ const App = () => {
       <Dialog
         open={open}
         onClose={handleClose}
+        
       >
         <DialogTitle id="simple-dialog-title" style={{ textAlign: 'center' }}>Choose Your Role</DialogTitle>
         <Button variant="contained" color="primary" style={{ width: '50%', marginLeft: '25%' }} onClick={() => { addRole(user.uid, "seller"); getRole(user.uid, setUserRole); handleClose() }}>
@@ -70,7 +71,7 @@ const App = () => {
   return (
     <Container disableGutters>
       <div style={{ height: '10px' }} />
-      <ChooseRole user={user} />
+      
       <div data-cy="TopAppBar">
       <TopAppBar user={user} userRole={userRole} setPage={setPage} />
       </div>

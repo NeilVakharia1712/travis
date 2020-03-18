@@ -30,7 +30,7 @@ const ProductList = ({ productIds, user, userRole }) => {
           width: "100vw",
           alignItems: "center"
         }}
-        data-testid="product-list-empty"
+        data-testid="empty"
       >
         <img src='bookshelf.png' alt='bookshelf' style={{ height: '200px', left: '50%', top: '50%' }}></img>
         <br />

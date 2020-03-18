@@ -38,7 +38,7 @@ const TopAppBar = (props) => {
 									Thrift Shift
 								</Typography>
 								<Typography data-testid="role" variant="h6">
-								{props.userRole}
+								seller
 							</Typography>
 							{
 								props.user ? <Typography data-testid="role" variant="h6" data-cy="role">
