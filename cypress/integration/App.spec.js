@@ -12,7 +12,7 @@ describe ('Test App', () => {
   it('Sign In', () => {
     cy.visit ('/');
     cy.get('[data-cy=signin]').click();
-    cy.get('[data-cy=role]').should('contain' ,"seller");
+    cy.get('[data-cy=role]').should('contain' ,"logged in");
   });
 });
 

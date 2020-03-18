@@ -34,7 +34,7 @@ const AppDrawer = props => {
 			<List>
 				<ListItem button onClick={() => { props.setPage("product") }}>
 					<ListItemIcon><ViewListIcon /></ListItemIcon>
-					<ListItemText primary={"Your Items"} />
+					<ListItemText data-cy="items" primary={"Your Items"} />
 				</ListItem>
 				<ListItem button onClick = {signOut}>
 				<ListItemText primary={"Sign Out"} />

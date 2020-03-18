@@ -31,16 +31,21 @@ const TopAppBar = (props) => {
 			<ElevationScroll {...props}>
 				<AppBar style = {{background: "black"}}>
 					<Toolbar>
-						<AppDrawer userRole={props.userRole} setPage={props.setPage} />
+						<AppDrawer data-cy="AppDrawer" userRole={props.userRole} setPage={props.setPage} />
 						<Grid container alignItems="center" justify="space-between">
 							<Grid item>
 								<Typography variant="h6">
 									Thrift Shift
 								</Typography>
-
-								<Typography data-testid="role" data-cy="role" variant="h6">
-									{props.userRole}
-								</Typography>
+								<Typography data-testid="role" variant="h6">
+								{props.userRole}
+							</Typography>
+							{
+								props.user ? <Typography data-testid="role" variant="h6" data-cy="role">
+								logged in
+							</Typography> : null
+							}
+								
 							</Grid>
 							<Grid item >
 								{
