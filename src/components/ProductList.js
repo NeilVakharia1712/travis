@@ -23,11 +23,18 @@ const ProductList = ({ productIds, user, userRole }) => {
     );
   } else {
     return (
-      <div style={{ textAlign: 'center', height: '100vh', width: '100vw', alignItems: 'center' }}>
+      <div
+        style={{
+          textAlign: "center",
+          height: "100vh",
+          width: "100vw",
+          alignItems: "center"
+        }}
+        data-testid="product-list-empty"
+      >
         <img src='bookshelf.png' alt='bookshelf' style={{ height: '200px', left: '50%', top: '50%' }}></img>
         <br />
         There is nothing here<br />
-        Add an item to start
       </div>
     );
   }
