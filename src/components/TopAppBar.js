@@ -38,14 +38,14 @@ const TopAppBar = (props) => {
 									Thrift Shift
 								</Typography>
 
-								<Typography data-testid="role" variant="h6">
+								<Typography data-testid="role" data-cy="role" variant="h6">
 									{props.userRole}
 								</Typography>
 							</Grid>
 							<Grid item >
 								{
 									props.user ? <LogoutPopover><Avatar src={props.user.photoURL} /></LogoutPopover>
-										: <Button style = {{color:"white"}} data-testid="signin" onClick={signInWithGoogle}>Sign In</Button>
+										: <Button style = {{color:"white"}} data-testid="signin" data-cy="signin"  onClick={signInWithGoogle}>Sign In</Button>
 								}
 							</Grid>
 						</Grid>
